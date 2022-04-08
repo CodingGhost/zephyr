@@ -1340,7 +1340,7 @@ int bt_le_adv_start(const struct bt_le_adv_param *param,
 	int err;
 
 	if (!adv) {
-		return -ENOMEM;
+		return -EALREADY;
 	}
 
 	if (IS_ENABLED(CONFIG_BT_EXT_ADV) &&
